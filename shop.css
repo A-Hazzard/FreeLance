@@ -1,0 +1,16 @@
+#shop-main-container{
+    background-color: #FEFFFE;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin-left: 9%;
+    margin-bottom: 2%;
+    background-color:#F4F0EF ;
+    
+}
+
+.product-price{
+    padding: 5%;
+}
+
