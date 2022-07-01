@@ -1284,7 +1284,7 @@ header{
     hr{
         width: calc(var(--hr-width) - 25%);
         height: 1px;
-        margin-left: calc(var(--hr-margin-left) + 11%);
+        margin-left: calc(var(--hr-margin-left) + 11.5%);
         margin-top: var(--hr-margin-top);
         background-color: grey;
     }
@@ -1327,11 +1327,11 @@ header{
     }
     
     .mySlides img {
-      height: var(--mySlide-img-height);
-      width: calc(var(--mySlides-img-width) + 35%);
+      height: calc(var(--mySlide-img-height) + 200px);
+      width: calc(var(--mySlides-img-width) - 2vw);
       object-fit: cover;
       vertical-align: middle;
-      margin-left: calc(var(--mySlide-img-margin-left) - 18%);
+      margin-left: calc(var(--mySlide-img-margin-left) - 22%);
     }
     
     .slideshow-container {
