@@ -1,16 +1,93 @@
+:root{
+    --card-margin-left: 12%;
+    --card-margin-bottom: 2%;
+    --product-price-padding: 5%;
+    --card-width:  230px;
+    --card-img-height: 20em;
+}
+
 #shop-main-container{
     background-color: #FEFFFE;
     display: flex;
     flex-wrap: wrap;
 }
 .card{
-    margin-left: 9%;
-    margin-bottom: 2%;
+    margin-left: var(--card-margin-left);
+    margin-bottom: var(--card-margin-bottom);
     background-color:#F4F0EF ;
+    width: var(--card-width);
+    height: 400px;
+    overflow: hidden;
     
 }
 
-.product-price{
-    padding: 5%;
+.card img{
+    height: var(--card-img-height);
 }
 
+.product-price{
+    padding: var(--product-price-padding);
+}
+
+
+@media only screen and (max-width: 1024px){
+    .card{
+       
+        margin-left: calc(var(--card-margin-left) - 4%);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        margin-left: calc(var(--card-margin-left) - 4%);
+    }
+
+    .card{
+        width: calc(var(--card-width) - 55px);
+       
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    
+    .fa-bag-shopping{
+        margin-left: 10%;
+    }
+
+#logo{
+    margin-left: 35%;
+}
+
+    hr{
+        margin-left: 20%;
+    }
+
+    #links-container{
+        margin-left: -55%;
+     
+    }
+  
+    .nav-links{
+        font-size: 15px;
+        margin-left: .5%;
+    }
+    .card img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .card{
+        width: 80%;
+        height: auto;
+        margin-left: calc(var(--card-margin-left) - 1%);
+        overflow: unset;
+    }
+}
+
+@media only screen and (max-width: 376px){
+  
+
+    .nav-links{
+        font-size: 12px;
+    }
+}
