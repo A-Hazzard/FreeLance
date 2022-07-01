@@ -10,7 +10,7 @@
     --medium-font-size: 20px;
     --small-font-size: 16px;
     --black-box-p-font-size: 25px;
-    --full-width: 100;
+    --full-width: 100%;
     --logo-height: 90px;
     --logo-margin-left: 46%;
     --logo-margin-top: 2%;
@@ -104,7 +104,7 @@
 }
 
 body{
-background-color: #ffffff;
+background-color: #EFEFEF;
 box-sizing: border-box;
 }
 
@@ -113,74 +113,76 @@ header{
    
 }
 
+
 /* -======= Media Queriers =====- */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
     #logo{
-        height: var(--logo-height);
-       margin-left: calc(var(--logo-margin-left) + 3%);
+        height: 60px;
+        width: 60px;
+       margin-left: var(--logo-margin-left);
        margin-top: var(--logo-margin-top);
     }
-    
-    
+
     nav{
-        margin-top: 2%;
-        width: 120%;
+        margin-top: 1%;
     }
     
+    #links-container{
+        margin-left: 25%;
+    }
+
     .nav-links{
         display: inline;
         position: relative;
-       margin-left: -3%;
-      
+       margin-left: 2%;
     }
-    
-    
+
     .nav-links a{
         text-decoration: none;
-        color: grey;
-        margin-left: 9%;
+        color: black;
     }
-    
     
     hr{
-        width: calc(var(--hr-width) - 25%);
-        height: 1px;
-        margin-left: calc(var(--hr-margin-left) + 20%);
+        width: calc(var(--hr-width) + 15%);
+        margin-left: calc(var(--hr-margin-left) - 8%);
         margin-top: var(--hr-margin-top);
-        background-color: grey;
     }
-    
+   
+
+    h1, #CTA{
+       margin: unset;
+       text-align: center;
+       display: block;
+    }
+
     .fa-bag-shopping{
-        font-size: calc(var(--shopping-bag-font-size) + 10px);
+        font-size: calc(var(--shopping-bag-font-size) + 5px);
         color: grey;
-        margin-top: calc(var(--shopping-bag-margin-top) - 15%); 
-        margin-left: calc(var(--shopping-bag-margin-left) + 65%);
+        margin-top: calc(var(--shopping-bag-margin-top) - 12%); 
+        margin-left: calc(var(--shopping-bag-margin-left) + 55%);
         display: inline;
         position: absolute;
-       
     }
     
     
     main{
         margin-top: 5%;
-        
     }
 
     h1{
         font-size: var(--h1-font-size);
         margin-bottom: var(--h1-margin-bottom);
-        margin-left: 32%;
         font-family: 'Montserrat', sans-serif;
+        width: var(--full-width);
        font-weight: normal;
     }
-
     
 
     #CTA{
         margin-bottom: 2%;
-       margin-left: 44%;
+        text-align: center;
+       
         font-family: 'Ubuntu', sans-serif;    
         color: black;
     }
@@ -191,18 +193,24 @@ header{
     }
     
     .mySlides img {
-      height: var(--mySlide-img-height);
-      width: calc(var(--mySlides-img-width) + 10vw);
-      object-fit: cover;
-      vertical-align: middle;
-      margin-left: calc(var(--mySlide-img-margin-left) - 20%);
+        block-size: 530px;
+        cursor: pointer;
+        height: var(--mySlide-img-height);
+        inline-size: 940px;
+        object-fit: cover;
+        perspective-origin: 470px 265px;
+        transform-origin: 470px 265px;
+        width: calc(var(--mySlides-img-width) - 5vw);
+        font: 10px Arial, Helvetica, sans-serif;
+        margin-left: calc(var(--mySlide-img-margin-left) - 20%);
     }
+    
     
     .slideshow-container {
       position: relative;
       margin: var(--slideshow-container-margin);
       width: var(--slideshow-container-width);
-      margin-left: 20%;
+      margin-left: 18%;
     }
     
     
@@ -225,7 +233,7 @@ header{
       animation-duration: 1.5s;
     }
     
-    /*
+    
     #dots-container{
         display: none;
     }
@@ -239,28 +247,32 @@ header{
         opacity: 1;
     }
     }
-    
+ 
+
     .products-container{
         display: flex;
-        flex-wrap: wrap;
+       flex-direction: column;
+       align-items: center;
         margin-bottom: var(--product-container-margin-bottom);
     }
     
     .product-card{
-        margin-left: var(--product-card-margin-left);
-        padding-left: var(--product-card-padding-left);
-        background-color: #f4f0ef84;
+     
+        background-color: #dddcdc;
         display: flex;
         flex-direction: column;
         border-radius: var(--product-card-border-radius);
         padding: var(--product-card-padding);
-    
+       width: calc(var(--product-card-width) + 30%);
+       overflow: hidden;
+       margin-top: 5%;
     }
     
-    .product-img img{
-      overflow: hidden;
+    .product-img {
+        margin: 0 auto;
     }
-    
+ 
+ 
     .product-img img:last-of-type{
         height: calc(var(--product-img-height) + 35px);
     }
@@ -379,8 +391,7 @@ header{
         margin: auto;
         margin-top: var(--container-margin-top);
     }
-    
-     -======= Contact =====- 
+}
     
     #contact {
         font-family: 'Poppins';
@@ -493,74 +504,74 @@ header{
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 767px)  {
+@media only screen and (min-width: 766px)  {
     
     #logo{
-        height: var(--logo-height);
-       margin-left: calc(var(--logo-margin-left) - 7%);
+        height: 60px;
+        width: 60px;
+       margin-left: var(--logo-margin-left);
        margin-top: var(--logo-margin-top);
-      
     }
-    
-    
+
     nav{
-        margin-top: 2%;
+        margin-top: 1%;
     }
     
+    #links-container{
+        margin-left: 25%;
+    }
+
     .nav-links{
         display: inline;
         position: relative;
-       
-      
+       margin-left: 2%;
     }
-    
-    
+
     .nav-links a{
         text-decoration: none;
-        color: grey;
-        padding-left: 8%;
+        color: black;
     }
-    
     
     hr{
-        width: calc(var(--hr-width) - 25%);
-        height: 1px;
-        margin-left: calc(var(--hr-margin-left) + 8%);
+        width: calc(var(--hr-width) + 15%);
+        margin-left: calc(var(--hr-margin-left) - 8%);
         margin-top: var(--hr-margin-top);
-        background-color: grey;
     }
-    
+   
+
+    h1, #CTA{
+       margin: unset;
+       text-align: center;
+       display: block;
+    }
+
     .fa-bag-shopping{
-        font-size: calc(var(--shopping-bag-font-size) + 10px);
+        font-size: calc(var(--shopping-bag-font-size) + 5px);
         color: grey;
-        margin-top: calc(var(--shopping-bag-margin-top) - 15%); 
-        margin-left: calc(var(--shopping-bag-margin-left) + 45%);
+        margin-top: calc(var(--shopping-bag-margin-top) - 12%); 
+        margin-left: calc(var(--shopping-bag-margin-left) + 55%);
         display: inline;
         position: absolute;
-       
     }
     
     
     main{
         margin-top: 5%;
     }
-    
-    h1{
-        width: var(--full-width);
-    }
+
     h1{
         font-size: var(--h1-font-size);
         margin-bottom: var(--h1-margin-bottom);
         font-family: 'Montserrat', sans-serif;
+        width: var(--full-width);
        font-weight: normal;
-       margin-left: 26%;
     }
     
 
     #CTA{
         margin-bottom: 2%;
-        text-align: unset;
-        margin-left: 37%;
+        text-align: center;
+       
         font-family: 'Ubuntu', sans-serif;    
         color: black;
     }
@@ -571,12 +582,18 @@ header{
     }
     
     .mySlides img {
-      height: var(--mySlide-img-height);
-      width: calc(var(--mySlides-img-width) - 1vw);
-      object-fit: cover;
-      vertical-align: middle;
-      margin-left: calc(var(--mySlide-img-margin-left) - 26%);
+        block-size: 530px;
+        cursor: pointer;
+        height: var(--mySlide-img-height);
+        inline-size: 940px;
+        object-fit: cover;
+        perspective-origin: 470px 265px;
+        transform-origin: 470px 265px;
+        width: calc(var(--mySlides-img-width) - 5vw);
+        font: 10px Arial, Helvetica, sans-serif;
+        margin-left: calc(var(--mySlide-img-margin-left) - 20%);
     }
+    
     
     .slideshow-container {
       position: relative;
@@ -875,69 +892,72 @@ header{
  
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 991px)  {
-    
     #logo{
-        height: var(--logo-height);
-       margin-left: calc(var(--logo-margin-left) - 2%);
+        height: 80px;
+        width: 80px;
+       margin-left: var(--logo-margin-left);
        margin-top: var(--logo-margin-top);
-        border: 1px solid;
+        
     }
     
     
+    #links-container{
+        margin-left: 32%;
+    }
     
     .nav-links a{
         text-decoration: none;
-        color: grey;
-        padding-left: 6%;
-        margin-left: 4%;
+        color: black;
+        font-size: 15px;
+        padding: 0;
+        text-align: center;
+        margin-left: 2%;
     }
-    
     
     hr{
-        width: calc(var(--hr-width) - 35%);
-        height: 1px;
-        margin-left: calc(var(--hr-margin-left) + 15%);
-        margin-top: var(--hr-margin-top);
-        background-color: grey;
+        width: var(--hr-width);
+        margin-left: var(--hr-margin-left);
     }
+   
+
+    h1, #CTA{
+       margin: unset;
+       text-align: center;
+       display: block;
+    }
+    
     
     .fa-bag-shopping{
         font-size: calc(var(--shopping-bag-font-size) + 10px);
         color: grey;
-        margin-top: calc(var(--shopping-bag-margin-top) - 12%); 
+        margin-top: calc(var(--shopping-bag-margin-top) - 10%); 
         margin-left: calc(var(--shopping-bag-margin-left) + 55%);
         display: inline;
         position: absolute;
        
     }
+ 
+       
+    .mySlides img {
+        block-size: 530px;
+        cursor: pointer;
+        height: 530px;
+        inline-size: 940px;
+        object-fit: cover;
+        perspective-origin: 470px 265px;
+        transform-origin: 470px 265px;
+        width: 940px;
+        font: 10px Arial, Helvetica, sans-serif;
+        margin-left: calc(var(--mySlide-img-margin-left) - 30%);
+    }
+   
+
     
     
     main{
         margin-top: 5%;
     }
     
-    #welcome{
-        margin-left: 35%;
-    }
-    #CTA{
-        margin-bottom: 2%;
-        margin-left: 43%;
-        font-family: 'Ubuntu', sans-serif;    
-        color: black;
-    }
-    
-    
-    #dots-container {
-        display: none;
-    }
-    
-    .mySlides img {
-      height: calc(var(--mySlide-img-height) + 100px);
-      width: calc(var(--mySlides-img-width) + 2vw);
-      object-fit: cover;
-      vertical-align: middle;
-      margin-left: calc(var(--mySlide-img-margin-left) - 27%);
-    }
     
     .slideshow-container {
       position: relative;
@@ -1235,17 +1255,64 @@ header{
 
 @media only screen and (min-width: 1024px)  {
 
-    #CTA{    
-        margin-left: 37%;
+    #logo{
+        height: 80px;
+        width: 80px;
+       margin-left: var(--logo-margin-left);
+       margin-top: var(--logo-margin-top);
+        
     }
     
-
     
-    .mySlides img {
-      margin-left: calc(var(--mySlide-img-margin-left) - 26%);
+    #links-container{
+        margin-left: 32%;
+    }
+    
+    .nav-links a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        padding: 0;
+        text-align: center;
+        margin-left: 2%;
+    }
+    
+    hr{
+        width: var(--hr-width);
+        margin-left: var(--hr-margin-left);
+    }
+   
+
+    h1, #CTA{
+       margin: unset;
+       text-align: center;
+       display: block;
+    }
+    
+    
+    .fa-bag-shopping{
+        font-size: calc(var(--shopping-bag-font-size) + 10px);
+        color: grey;
+        margin-top: calc(var(--shopping-bag-margin-top) - 10%); 
+        margin-left: calc(var(--shopping-bag-margin-left) + 55%);
+        display: inline;
+        position: absolute;
+       
     }
  
-    
+       
+    .mySlides img {
+        block-size: 530px;
+        cursor: pointer;
+        height: 530px;
+        inline-size: 940px;
+        object-fit: cover;
+        perspective-origin: 470px 265px;
+        transform-origin: 470px 265px;
+        width: 940px;
+        font: 10px Arial, Helvetica, sans-serif;
+        margin-left: calc(var(--mySlide-img-margin-left) - 25%);
+    }
     
     /*
     #dots-container{
@@ -1517,28 +1584,41 @@ header{
 @media only screen and (min-width: 1200px) {
     
     #logo{
-    margin-left: calc(var(--logo-margin-left) - 2%);
- 
+        height: 80px;
+        width: 80px;
+       margin-left: var(--logo-margin-left);
+       margin-top: var(--logo-margin-top);
+        
     }
     
     
+    #links-container{
+        margin-left: 35%;
+    }
+    
     .nav-links a{
-      
-margin-left: 3%;
-        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        padding: 0;
+        text-align: center;
+        margin-left: 2%;
     }
     
     
     hr{
-       
-        margin-left: calc(var(--hr-margin-left) + 15%);
-       
+        width: calc(var(--hr-width) + 3%);
+        height: .1px;
+        margin-left: var(--hr-margin-left);
+        margin-top: var(--hr-margin-top);
+        background-color: grey;
     }
+    
     
     .fa-bag-shopping{
         font-size: calc(var(--shopping-bag-font-size) + 10px);
         color: grey;
-        margin-top: calc(var(--shopping-bag-margin-top) - 12%); 
+        margin-top: calc(var(--shopping-bag-margin-top) - 10%); 
         margin-left: calc(var(--shopping-bag-margin-left) + 55%);
         display: inline;
         position: absolute;
@@ -1579,11 +1659,16 @@ margin-left: 3%;
     }
     
     .mySlides img {
-      height: calc(var(--mySlide-img-height) + 200px);
-      width: calc(var(--mySlides-img-width));
-      object-fit: cover;
-      vertical-align: middle;
-      margin-left: calc(var(--mySlide-img-margin-left) - 25%);
+        block-size: 530px;
+        cursor: pointer;
+        height: 530px;
+        inline-size: 940px;
+        object-fit: cover;
+        perspective-origin: 470px 265px;
+        transform-origin: 470px 265px;
+        width: 940px;
+        font: 10px Arial, Helvetica, sans-serif;
+        margin-left: calc(var(--mySlide-img-margin-left) - 15%);
     }
     
     .slideshow-container {
@@ -1884,8 +1969,9 @@ margin-left: 3%;
 @media only screen and (min-width: 1440px) {
     
     #logo{
-        height: calc(var(--logo-height) + 50px);
-       margin-left: calc(var(--logo-margin-left) - 2%);
+        height: 80px;
+        width: 80px;
+       margin-left: var(--logo-margin-left);
        margin-top: var(--logo-margin-top);
         
     }
@@ -1903,27 +1989,32 @@ margin-left: 3%;
       
     }
     
+    #links-container{
+        margin-left: 35%;
+    }
     
     .nav-links a{
         text-decoration: none;
-        color: grey;
-        letter-spacing: 1px;
-        font-size: 30px;
+        color: black;
+        font-size: 15px;
+        padding: 0;
+        text-align: center;
+        margin-left: 2%;
     }
     
     
     hr{
-        width: calc(var(--hr-width) - 35%);
-        height: 1px;
-        margin-left: calc(var(--hr-margin-left) + 17%);
+        width: calc(var(--hr-width) + 3%);
+        height: .1px;
+        margin-left: var(--hr-margin-left);
         margin-top: var(--hr-margin-top);
         background-color: grey;
     }
     
     .fa-bag-shopping{
-        font-size: calc(var(--shopping-bag-font-size) + 25px);
+        font-size: calc(var(--shopping-bag-font-size) + 5px);
         color: grey;
-        margin-top: calc(var(--shopping-bag-margin-top) - 12%); 
+        margin-top: calc(var(--shopping-bag-margin-top) - 8%); 
         margin-left: calc(var(--shopping-bag-margin-left) + 55%);
         display: inline;
         position: absolute;
@@ -1940,7 +2031,7 @@ margin-left: 3%;
         width: var(--full-width);
     }
     h1{
-        font-size: calc(var(--h1-font-size) + 50px);
+        font-size: var(--h1-font-size);
         margin-bottom: var(--h1-margin-bottom);
         font-family: 'Montserrat', sans-serif;
        font-weight: normal;
@@ -1948,7 +2039,7 @@ margin-left: 3%;
     
     #CTA{
         margin-bottom: 2%;
-        font-size: 30px;
+        font-size: calc(var(--h1-font-size) - 35px);
         font-family: 'Ubuntu', sans-serif;    
         color: black;
     }
@@ -1959,12 +2050,19 @@ margin-left: 3%;
     }
     
     .mySlides img {
-      height: calc(var(--mySlide-img-height) + 300px);
-      width: calc(var(--mySlides-img-width) + 2vw);
-      object-fit: cover;
-      vertical-align: middle;
-      margin-left: calc(var(--mySlide-img-margin-left) - 25%);
+        block-size: 530px;
+        cursor: pointer;
+        height: 530px;
+        inline-size: 940px;
+        object-fit: cover;
+        perspective-origin: 470px 265px;
+        transform-origin: 470px 265px;
+        width: 940px;
+        font: 10px Arial, Helvetica, sans-serif;
+        margin-left: var(--mySlide-img-margin-left);
     }
+ 
+    
     
     .slideshow-container {
       position: relative;
