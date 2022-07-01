@@ -895,7 +895,7 @@ header{
     .nav-links{
         display: inline;
         position: relative;
-      
+        padding-left: 9%;
     }     
     .nav-links a{
         text-decoration: none;
