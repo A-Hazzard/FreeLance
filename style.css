@@ -195,8 +195,8 @@ header{
     }
     
     .mySlides img {
-      height: calc(var(--mySlide-img-height) + 200px);
-      width: calc(var(--mySlides-img-width));
+      height: calc(var(--mySlide-img-height) + 300px);
+      width: var(--mySlides-img-width);
       object-fit: cover;
       vertical-align: middle;
       margin-left: calc(var(--mySlide-img-margin-left) - 25%);
@@ -500,7 +500,7 @@ header{
 @media only screen and (max-width: 1200px) {
     
     #logo{
-        height: var(--logo-height);
+    height: var(--logo-height);
        margin-left: calc(var(--logo-margin-left) - 2%);
        margin-top: var(--logo-margin-top);
         
@@ -516,15 +516,14 @@ header{
     .nav-links{
         display: inline;
         position: relative;
-      
+
     }
     
     
     .nav-links a{
         text-decoration: none;
         color: grey;
-        letter-spacing: 1px;
-      
+margin-left: 8%;
         font-size: 25px;
     }
     
