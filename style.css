@@ -1654,7 +1654,7 @@ header{
     .nav-links a{
         text-decoration: none;
         color: grey;
-        padding-left: 9%;
+        padding-left: 6%;
     }
     
     
@@ -1705,10 +1705,10 @@ header{
     
     .mySlides img {
       height: var(--mySlide-img-height);
-      width: calc(var(--mySlides-img-width) + 35%);
+      width: calc(var(--mySlides-img-width) - 2vw);
       object-fit: cover;
       vertical-align: middle;
-      margin-left: calc(var(--mySlide-img-margin-left) - 18%);
+      margin-left: calc(var(--mySlide-img-margin-left) - 22%);
     }
     
     .slideshow-container {
