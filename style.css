@@ -521,9 +521,6 @@ h1{
     }
     
     
-    #dots-container {
-        display: none;
-    }
     
     .mySlides img {
         block-size: 530px;
@@ -852,9 +849,9 @@ h1{
 @media only screen and (min-width: 319px) {
 
     #logo{
-        height: 60px;
-        width: 60px;
-       margin-left: calc(var(--logo-margin-left) - 9%);
+        height: 50px;
+        width: 50px;
+       margin-left: calc(var(--logo-margin-left) - 40%);
        margin-top: var(--logo-margin-top);
     }
 
@@ -862,8 +859,11 @@ h1{
         margin-top: 1%;
     }
     
+    .faq-links-container{
+       margin-left: -3%;
+    }
     #links-container{
-        margin-left: 3%;
+        margin-left: 5%;
     }
 
     .nav-links{
@@ -878,11 +878,24 @@ h1{
         font-size: 12px;
     }
     
-    hr{
-        width: calc(var(--hr-width) + 15%);
-        margin-left: calc(var(--hr-margin-left) - 10%);
-        margin-top: var(--hr-margin-top);
+    h1{
+        font-size: calc(var(--h1-font-size) - 25px);
+        margin-bottom: var(--h1-margin-bottom);
+        font-family: 'Montserrat', sans-serif;
+        width: var(--full-width);
+       font-weight: normal;
+       margin-left: -5%;
     }
+    
+
+    #CTA{
+        margin-bottom: 2%;
+        text-align: center;
+        margin-left: -5%;
+        font-family: 'Ubuntu', sans-serif;    
+        color: black;
+    }
+    
    
 
     h1, #CTA{
@@ -892,10 +905,10 @@ h1{
     }
 
     .fa-bag-shopping{
-        font-size: calc(var(--shopping-bag-font-size) - 10px);
+        font-size: calc(var(--shopping-bag-font-size) - 5px);
         color: grey;
-        margin-top: calc(var(--shopping-bag-margin-top) - 20%); 
-        margin-left: calc(var(--shopping-bag-margin-left) + 45%);
+        margin-top: calc(var(--shopping-bag-margin-top) - 1%); 
+        margin-left: calc(var(--shopping-bag-margin-left) + 35%);
         display: inline;
         position: absolute;
     }
@@ -928,6 +941,8 @@ h1{
         display: none;
     }
     
+    
+    
     .mySlides img {
         block-size: 530px;
         cursor: pointer;
@@ -940,6 +955,7 @@ h1{
         font: 10px Arial, Helvetica, sans-serif;
         margin-left: calc(var(--mySlide-img-margin-left) + 13%);
     }
+    
     
     
     .slideshow-container {
@@ -1069,6 +1085,12 @@ h1{
         margin-bottom: var(--Safety-policy-margin-bottom);
      }
     
+     #img1, #img2, #img3{
+        width: 290px; 
+        height: 250px;
+         object-fit: cover;
+         margin-left: -10%;
+     }
     .policy{
          margin-top: 2%;
     } 
@@ -1103,6 +1125,21 @@ h1{
         margin: auto;
         margin-top: var(--container-margin-top);
     }
+
+    #FAQ-CTA{
+        font-weight: unset;
+        font-size: 15px;
+    }
+    
+    #faq-statement, .faq .answer{
+        font-size: 13px;
+        font-family: 'Abel', sans-serif;
+    }
+
+    .faq .faq-question{
+        font-size: 25px;
+        font-family: 'Lobster', cursive;
+        }
 
     
     #contact {
@@ -1257,6 +1294,7 @@ h1{
         }
         
         hr{
+           
             width: calc(var(--hr-width) + 15%);
             margin-left: calc(var(--hr-margin-left) - 10%);
             margin-top: var(--hr-margin-top);
