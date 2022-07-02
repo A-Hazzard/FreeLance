@@ -447,9 +447,9 @@ h1{
 @media only screen and (min-width: 279px) {
 
     #logo{
-        height: 100px;
-        width: 100px;
-       margin-left: calc(var(--logo-margin-left) - 20%);
+        height: 50px;
+        width: 50px;
+       margin-left: calc(var(--logo-margin-left) - 40%);
        margin-top: var(--logo-margin-top);
     }
 
@@ -458,7 +458,7 @@ h1{
     }
     
     #links-container{
-        margin-left: 3%;
+        margin-left: 5%;
     }
 
     .nav-links{
@@ -474,9 +474,7 @@ h1{
     }
     
     hr{
-        width: calc(var(--hr-width) + 15%);
-        margin-left: calc(var(--hr-margin-left) - 15%);
-        margin-top: var(--hr-margin-top);
+       display: none;
     }
    
 
@@ -487,10 +485,10 @@ h1{
     }
 
     .fa-bag-shopping{
-        font-size: calc(var(--shopping-bag-font-size) + 1px);
+        font-size: calc(var(--shopping-bag-font-size) - 5px);
         color: grey;
-        margin-top: calc(var(--shopping-bag-margin-top) - 35%); 
-        margin-left: calc(var(--shopping-bag-margin-left) + 45%);
+        margin-top: calc(var(--shopping-bag-margin-top) - 1%); 
+        margin-left: calc(var(--shopping-bag-margin-left) + 35%);
         display: inline;
         position: absolute;
     }
@@ -501,7 +499,7 @@ h1{
     }
 
     h1{
-        font-size: calc(var(--h1-font-size) - 20px);
+        font-size: calc(var(--h1-font-size) - 25px);
         margin-bottom: var(--h1-margin-bottom);
         font-family: 'Montserrat', sans-serif;
         width: var(--full-width);
@@ -663,6 +661,14 @@ h1{
         margin-left: var(--Safety-policy-margin-left);
         margin-bottom: var(--Safety-policy-margin-bottom);
      }
+
+    
+
+     #img1, #img2, #img3{
+        height: 180px;
+        width: 270px;
+    margin-left: -13%;
+     }
     
     .policy{
          margin-top: 2%;
@@ -699,7 +705,19 @@ h1{
         margin-top: var(--container-margin-top);
     }
 
+    .container-1 h1{
+        font-size: calc(var(--h1-font-size) - 32px);
+        margin-left: 1%;
+    }
+
+    #FAQ-CTA{
+        font-weight: unset;
+        font-size: 15px;
+    }
     
+    #faq-statement{
+        font-size: 13px;
+    }
     #contact {
         font-family: 'Poppins';
         padding-bottom: var(--contact-padding-bottom);
