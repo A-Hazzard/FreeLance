@@ -665,9 +665,10 @@ h1{
     
 
      #img1, #img2, #img3{
-        height: 180px;
-        width: 270px;
-    margin-left: -13%;
+        width: 260px; 
+        height: 250px;
+         object-fit: cover;
+         margin-left: -10%;
      }
     
     .policy{
@@ -715,9 +716,15 @@ h1{
         font-size: 15px;
     }
     
-    #faq-statement{
+    #faq-statement, .faq .answer{
         font-size: 13px;
     }
+
+    .faq .faq-question{
+        font-size: 25px
+    }
+
+
     #contact {
         font-family: 'Poppins';
         padding-bottom: var(--contact-padding-bottom);
