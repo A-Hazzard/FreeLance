@@ -14,6 +14,8 @@
     --logo-height: 90px;
     --logo-margin-left: 46%;
     --logo-margin-top: 2%;
+    --shop-logo-with: 50px;
+    --shop-logo-height: 50px;
     --nav-left-position: 36%;
     --nav-padding: 10px;
     --hr-width: 60%;
@@ -451,6 +453,14 @@ h1{
 
 @media only screen and (min-width: 279px) {
 
+    #shop-logo{
+        width: calc(var(--shop-logo-width) - 10px);
+        height: calc(var(--shop-logo-height) - 10px);
+        margin-left: calc(var(--logo-margin-left) - 40%);
+        margin-top: var(--logo-margin-top);
+    }
+
+
     #logo{
         height: 50px;
         width: 50px;
@@ -465,6 +475,11 @@ h1{
     #links-container{
         margin-left: 5%;
     }
+
+    #shopping-header #links-container{
+        margin-left: 5%;
+    }
+
 
     .nav-links{
         display: inline;
@@ -850,8 +865,6 @@ h1{
     
       }   
       
-
-
 @media only screen and (min-width: 319px) {
 
     #logo{
@@ -870,6 +883,10 @@ h1{
     }
     #links-container{
         margin-left: 5%;
+    }
+
+    #shopping-header #links-container{
+        margin-left: 15%;
     }
 
     .nav-links{
@@ -1222,6 +1239,17 @@ h1{
     #links-container{
         margin-left: 10%;
     } 
+
+    #shopping-header #links-container{
+        margin-left: 15%;
+   
+    }
+
+    #shopping-header #links-container a{
+        font-size: 13px;
+    }
+
+  
     
           } 
 
@@ -1229,8 +1257,11 @@ h1{
           
  @media only screen and (min-width: 411px) {
       
+    #shopping-header #links-container{
+        margin-left: 20%;
+    }
         
-            .fa-bag-shopping{
+    .fa-bag-shopping{
               
                 margin-left: calc(var(--shopping-bag-margin-left) + 30%);
            
@@ -1244,6 +1275,12 @@ h1{
           
 @media only screen and (min-width: 599px){
     
+    #shopping-header #shop-logo{
+        width: 80px;
+        height: 80px;
+        margin-left: calc(var(--logo-margin-left) - 2%);
+
+    }
     #logo{
        margin-left: calc(var(--logo-margin-left) - 5%);
       
@@ -1288,6 +1325,13 @@ h1{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 767px)  {
   
+         
+    #shopping-header #shop-logo{
+        width: 80px;
+        height: 80px;
+        margin-left: var(--logo-margin-left);
+    }
+
   #logo{
     height: 80px;
     width: 80px;
@@ -1296,6 +1340,8 @@ h1{
   #links-container{
     margin-left: 25%;
   }
+
+ 
 
     #black-box{
         width: calc(var(--black-box-width) + 5%);
@@ -1361,6 +1407,7 @@ h1{
         width: 80%;
     }
     
+  
     .container {
         justify-content: center;
         align-items: center;
@@ -1601,26 +1648,26 @@ h1{
     }
     
     #safety-black-box{
-        width: var(--safety-black-box-width);
-        height: var(--safety-black-box-height);
+        width: calc(var(--safety-black-box-width) + 5%);
+        height: calc(var(--safety-black-box-height) - 50px);
         display: inline;
         background-color: #020202;
         color: white;
-        margin-left: var(--safety-black-box-margin-left);
+        margin-left: calc(var(--safety-black-box-margin-left) - 15%);
         margin-top: var(--safety-black-box-margin-top);
         position: absolute;
-        padding: var(--safety-black-box-padding);
+        padding: calc(var(--safety-black-box-padding) - 1%);
         z-index: 1;
         font-family: 'Montserrat', sans-serif;
     
     }
     
     #safety-black-box h2{
-        line-height: var(--safety-black-box-h2-line-height);
+text-align: left;
     }
     
     #safety-black-box p{
-        font-size: calc(var(--black-box) - 5px);
+        font-size: calc(var(--black-box-p-font-size) - 2px);
     }
     
     #Safety-Policies{
@@ -1632,6 +1679,14 @@ h1{
         margin-left: var(--Safety-policy-margin-left);
         margin-bottom: var(--Safety-policy-margin-bottom);
      }
+
+     
+    #Safety-Policies-Statement #image-container-2 img{
+        width: 60%;
+        height: var(--image-container-img-height);
+        margin-left: calc(var(--image-container-img-margin-left) + 28%);
+    }
+    
     
     .policy{
          margin-top: 2%;
@@ -1750,7 +1805,7 @@ h1{
         letter-spacing: var(--container-1-letter-spacing);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    
+
     .image-container{
         padding: var(--image-container-padding);
     }
@@ -1795,6 +1850,10 @@ h1{
        
     }
     
+   #shopping-header hr{
+        margin-left: calc(var(--hr-margin-left) - 2%);
+    }
+
     h1{
         font-size: var(--h1-font-size);
        
@@ -1860,70 +1919,8 @@ h1{
         height: calc(var(--aboutUS-image-height) - 100px);
         width: calc(var(--aboutUS-image-width) + 10%);
     }
-    
-    
-    #Safety-Policies-Statement{
-        margin-top: var(--Safety-Policies-Statement-margin-top);
-    }
-    
-    #safety-black-box{
-        width: var(--safety-black-box-width);
-        height: var(--safety-black-box-height);
-        display: inline;
-        background-color: #020202;
-        color: white;
-        margin-left: var(--safety-black-box-margin-left);
-        margin-top: var(--safety-black-box-margin-top);
-        position: absolute;
-        padding: var(--safety-black-box-padding);
-        z-index: 1;
-        font-family: 'Montserrat', sans-serif;
-    
-    }
-    
-    #safety-black-box h2{
-        line-height: var(--safety-black-box-h2-line-height);
-    }
-    
-    #safety-black-box p{
-        font-size: calc(var(--black-box) - 5px);
-    }
-    
-    #Safety-Policies{
-        display: flex;
-        flex-direction: column;
-        margin-top: var(--Safety-policy-margin-top);
-        text-align: center;
-        width: var(--Safety-policy-width);
-        margin-left: var(--Safety-policy-margin-left);
-        margin-bottom: var(--Safety-policy-margin-bottom);
-     }
-    
-    .policy{
-         margin-top: 2%;
-    } 
-    
-    .policy h3, .policy span, .policy p{
-            margin-top: 1%;
-        }
-    .policy h3{
-        font-size: var(--policy-h3);
-        font-family: 'Montserrat';
-    }
-    
-    .policy span{
-        font-size: var(--policy-span-font-size);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .policy p{
-        font-size: var(--policy-p-font-size);
-        font-family: cursive;
-    }
-    
-    .fa-solid:not(.fa-bag-shopping){
-        font-size: var(--policy-icons-font-size);
-    }
+  
+   
     
     .container {
         justify-content: center;
@@ -2084,6 +2081,10 @@ h1{
         margin-left: calc(var(--product-card-margin-left) - 4%);
     }
 
+    #Safety-Policies-Statement #image-container-2 img{
+        height: calc(var(--image-container-img-height) + 100px);
+    }
+
    
 }
 
@@ -2141,65 +2142,7 @@ h1{
         width: calc(var(--aboutUS-image-width) + 5%);
     }
     
-    
-    #Safety-Policies-Statement{
-        margin-top: var(--Safety-Policies-Statement-margin-top);
-    }
-    
-    #safety-black-box{
-        width: var(--safety-black-box-width);
-        height: var(--safety-black-box-height);
-        display: inline;
-        background-color: #020202;
-        color: white;
-        margin-left: var(--safety-black-box-margin-left);
-        margin-top: var(--safety-black-box-margin-top);
-        position: absolute;
-        padding: var(--safety-black-box-padding);
-        z-index: 1;
-        font-family: 'Montserrat', sans-serif;
-    
-    }
-    
-    #safety-black-box h2{
-        line-height: var(--safety-black-box-h2-line-height);
-    }
-    
-    #safety-black-box p{
-        font-size: calc(var(--black-box) - 5px);
-    }
-    
-    #Safety-Policies{
-        display: flex;
-        flex-direction: column;
-        margin-top: var(--Safety-policy-margin-top);
-        text-align: center;
-        width: var(--Safety-policy-width);
-        margin-left: var(--Safety-policy-margin-left);
-        margin-bottom: var(--Safety-policy-margin-bottom);
-     }
-    
-    .policy{
-         margin-top: 2%;
-    } 
-    
-    .policy h3, .policy span, .policy p{
-            margin-top: 1%;
-        }
-    .policy h3{
-        font-size: var(--policy-h3);
-        font-family: 'Montserrat';
-    }
-    
-    .policy span{
-        font-size: var(--policy-span-font-size);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .policy p{
-        font-size: var(--policy-p-font-size);
-        font-family: cursive;
-    }
+  
     
     .fa-solid:not(.fa-bag-shopping){
         font-size: var(--policy-icons-font-size);
@@ -2260,6 +2203,73 @@ h1{
     }
     
 } 
+
+@media only screen and (min-width: 2559px) {
+    
+    #logo{
+        width: 150px;
+        height: 150px;
+    }
+
+
+    #links-container a{
+        font-size: 25px;
+    }
+
+    #safety-black-box p{
+        font-size: calc(var(--black-box-p-font-size) + 10px);
+       
+    }
+
+    #safety-black-box h2{
+        font-size: calc(var(--black-box-h2-font-size) + 20px);
+       
+    }
+
+    #safety-black-box{
+        width: var(--black-box-width);
+        height: calc(var(--black-box-height) - 100px);
+    }
+
+    #Safety-Policies-Statement #image-container-2 img{
+        height: calc(var(--image-container-img-height) + 350px);
+    }
+  
+    #Safety-Policies{
+        
+        width: 60%;
+        margin: 42% auto;
+     }
+
+     .policy h3{
+        font-size: calc(var(--policy-h3) + 10px);
+        margin-top: -2%;
+     }
+
+     .policy p{
+        font-size: calc(var(--policy-p-font-size) + 15px);
+     }
+
+     #faq-m .container-1 h1{
+        font-size: 100px;
+     }
+
+     #FAQ-CTA{
+        font-size: 30px;
+     }
+
+     #faq-statement{
+        font-size: 35px;
+     }
+
+     .faq .faq-question{
+        font-size: 60px;
+     }
+
+     .faq .answer{
+        font-size: calc(var(--answer-font-size) + 20px);
+     }
+ } 
 
 
 
