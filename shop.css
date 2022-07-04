@@ -23,7 +23,7 @@
  flex-wrap: wrap;
     
 }
-.card{
+#shop-main-container .card{
     margin-left: var(--card-margin-left);
     margin-bottom: var(--card-margin-bottom);
     background-color:#F4F0EF ;
@@ -33,7 +33,7 @@
     
 }
 
-.card img{
+#shop-main-container .card img{
     height: var(--card-img-height);
 }
 
@@ -43,7 +43,7 @@
 
 @media only screen and (min-width: 279px){
   
-   .card{
+    #shop-main-container .card{
     margin-left: calc(var(--card-margin-left) - 2%);
     margin-top: 5%;
    }
@@ -55,7 +55,7 @@
 
 @media only screen and (min-width: 319px){
   
-    .card{
+    #shop-main-container .card{
         margin-left: calc(var(--card-margin-left) + 2%);
        }
     
@@ -94,21 +94,6 @@
    
 }
 
-@media only screen and (min-width: 425px) {
-    
-    .card{
-        margin-left: calc(var(--card-margin-left) + 8%);
-       }
-    
-       #shopping-header #links-container{
-        margin-left: 8%;
-       }
-
-       #shopping-header .fa-bag-shopping{
-        margin-left: 65%;
-        margin-top: 2%;
-       }
-}
 
 @media only screen and (min-width: 599px) {
    
@@ -139,6 +124,9 @@
    }
 
     
+   #shopping-header .fa-bag-shopping{
+    display: none;
+}
    #shop-main-container .card:nth-child(1),  #shop-main-container .card:nth-child(4),  #shop-main-container .card:nth-child(7),  #shop-main-container .card:nth-child(10){
     margin-left: 3%;
     
@@ -147,6 +135,8 @@
 
 @media only screen and (min-width: 991px){
    
+
+
     #shopping-header #links-container{
         margin-left: 30%;
     }
@@ -230,9 +220,9 @@
 
 @media only screen and (min-width: 2559px){
     #shopping-header #shop-logo{
-        width: 150px;
+        width: 100%;
         height: 150px;
-        margin-left: 45%;
+        margin-left: -5%;
     }
 
     #shopping-header .fa-bag-shopping{
