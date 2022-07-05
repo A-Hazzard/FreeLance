@@ -585,7 +585,7 @@ h1{
        width: calc(var(--product-card-width) + 10%);
        overflow: hidden;
        margin-top: 5%;
-      margin-left: calc(var(--product-card-margin-left) -2%);
+      margin-left: calc(var(--product-card-margin-left) - 2%);
     }
     
    
@@ -1086,7 +1086,7 @@ h1{
 
     .faq .faq-question{
         font-size: 25px;
-        font-family: 'Lobster', cursive;
+        font-family: 'Lobster';
         }
 
     
@@ -1276,8 +1276,9 @@ h1{
             
     #faq-m .image-container img{
         margin-left: 10%;
-    };
     }
+
+ }
             
                   
           
@@ -1357,7 +1358,7 @@ h1{
         margin-left: unset;
       }
 
-      #home-main hr{
+      #home-container hr{
         margin-left: var(--hr-margin-left);
       }
 
@@ -1483,7 +1484,7 @@ h1{
   #logo{
     margin-left: calc(var(--logo-margin-left) - 38%);
   }
-   #home-main hr{
+   #home-container hr{
     margin-left: var(--hr-margin-left);
    }
 
@@ -2286,11 +2287,11 @@ text-align: left;
         font-size: calc(var(--answer-font-size) + 20px);
      }
 
-     #home-main #welcome{
+     #home-container #welcome{
         font-size: 150px;
      }
 
-     #home-main #CTA{
+     #home-container #CTA{
         font-size: 40px;
      }
 
@@ -2345,9 +2346,7 @@ text-align: left;
        
         width: 100%;
      }
-     label p{
-        font-size: 40px;
-     }
+    
 
      input{
         width: 180vw;
