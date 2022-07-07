@@ -29,9 +29,12 @@
     "**/.vscode/**"
   ],
   "cSpell.words": [
+    "Cyron",
     "Rateof"
   ],
   "files.associations": {
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "iosfwd": "cpp"
   }
 }
