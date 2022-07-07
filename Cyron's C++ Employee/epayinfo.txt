@@ -1,2 +1,2 @@
-ID: 0 Name: Hours: 3.95253e-323 RateofPay: 0 Deductions: 6.95152e-310 gross pay: 0 net pay: -6.95152e-310
-ID: 0 Name: Average Hours Worked: 3.95253e-323 Average Deductions: 1.3903e-310
+ID: 0 Name: Hours: 3.95253e-323 RateofPay: 0 Deductions: 6.95159e-310 gross pay: 0 net pay: -6.95159e-310
+ID: 0 Name: Average Hours Worked: 3.95253e-323 Average Deductions: 1.39032e-310
