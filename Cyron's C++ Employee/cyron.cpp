@@ -32,11 +32,14 @@ string EmployeeData_Output;
 //Read from edata.txt
 ifstream edataFile("edata.txt");
 
-//Loop through with the getline() function to readd the file line by line, essentially output everything from the file.
-while(getline(edataFile, EmployeeData_Output)) cout << EmployeeData_Output << endl;
+/*Loop through with the getline() function to read the file line by line then
+using the EmlpoyeeData_Output to store the data from the file into that string,
+. Essentially outputting everything from the file into the new string variable.*/
+cout << "Edata.txt file information: \n" << endl;
+while( getline(edataFile, EmployeeData_Output) ) cout << EmployeeData_Output << endl;
 
  
-
+//Closing edata.txt file
 edataFile.close();
 
 }
