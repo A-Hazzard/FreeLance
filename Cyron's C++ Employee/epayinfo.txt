@@ -1,2 +1,20 @@
-ID: 0 Name: Hours: 3.95253e-323 RateofPay: 0 Deductions: 6.95159e-310 gross pay: 0 net pay: -6.95159e-310
-ID: 0 Name: Average Hours Worked: 3.95253e-323 Average Deductions: 1.39032e-310
+
+ID: 1111, Name: Steve, Hours: 45, Rate of Pay: 40, Deductions: 25, gross pay: 1800, net pay: 1775
+
+ID: 2222, Name: Johnny, Hours: 47, Rate of Pay: 60, Deductions: 50, gross pay: 2820, net pay: 2770
+
+ID: 3333, Name: Jacob, Hours: 35, Rate of Pay: 80, Deductions: 20, gross pay: 2800, net pay: 2780
+
+ID: 4444, Name: Joan, Hours: 60, Rate of Pay: 95, Deductions: 75, gross pay: 5700, net pay: 5625
+
+ID: 5555, Name: Sita, Hours: 50, Rate of Pay: 85, Deductions: 65, gross pay: 4250, net pay: 4185
+
+ID: 1111, Name: Steve, Average Hours Worked: 9, Average Deductions: 5
+
+ID: 2222, Name: Johnny, Average Hours Worked: 9.4, Average Deductions: 10
+
+ID: 3333, Name: Jacob, Average Hours Worked: 7, Average Deductions: 4
+
+ID: 4444, Name: Joan, Average Hours Worked: 12, Average Deductions: 15
+
+ID: 5555, Name: Sita, Average Hours Worked: 10, Average Deductions: 13

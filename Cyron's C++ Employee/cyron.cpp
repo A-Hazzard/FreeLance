@@ -15,7 +15,7 @@ using namespace std;
 /*Function that reads the employee data records from an input text file (edata.txt) and creates a student struct that adds the Employee Data
 to an array */
 void readEmployeeData(){
-  struct studentData{
+  struct student{
     string ID;
     string Name;
     string HoursWorked;
@@ -46,26 +46,34 @@ edataFile.close();
 
 //Function that computes gross and net payments and writes to a text fill (epayinfo.txt).
 void gross_netPay(int ID, string Name, double hoursWorked, double rateOfPay, double Deductions){
-  double grossPay = hoursWorked * rateOfPay;
-  double netPay = grossPay - Deductions;
+  
 
   //Create file called epayinfo.txt
+  ifstream readFile("edata.txt");
   ofstream employeePaymentInfo("epayinfo.txt",  std::ios_base::app);
 
+  while(readFile >> ID >> Name >> hoursWorked >> rateOfPay >>  Deductions){
+  double grossPay = hoursWorked * rateOfPay;
+  double netPay = grossPay - Deductions;
+ 
+  employeePaymentInfo << "\nID: " << ID << ", Name: " << Name << ", Hours: " << hoursWorked << ", Rate of Pay: " << rateOfPay << ", Deductions: " << Deductions << ", gross pay: " << grossPay << ", net pay: " << netPay << endl;
 
-  employeePaymentInfo << "ID: " << ID << " Name: " << Name << "Hours: " << hoursWorked << " RateofPay: " << rateOfPay << " Deductions: " << Deductions << " gross pay: " << grossPay << " net pay: " << netPay << endl;
-
-  
+  }
 }
 
 
 //Function that computes average hourly and deduction payments for each employee from a text file (epayinfo.txt). 
 void averagePayment(int ID, string Name, double hoursWorked, double rateOfPay, double Deductions) {
+  
+   ifstream readFile ("edata.txt");
+  ofstream employeePaymentInfo("epayinfo.txt",  std::ios_base::app);
+ while (readFile >> ID >> Name >> hoursWorked >> rateOfPay >>  Deductions){
   double averageHoursWork = hoursWorked / 5;
   double averageDeductions = Deductions / 5;
 
-  ofstream employeePaymentInfo("epayinfo.txt",  std::ios_base::app);
-  employeePaymentInfo << "ID: " << ID << " Name: " << Name << "Average Hours Worked: " << hoursWorked << " Average Deductions: " << averageDeductions;
+
+  employeePaymentInfo << "\nID: " << ID << ", Name: " << Name << ", Average Hours Worked: " << averageHoursWork << ", Average Deductions: " << averageDeductions << endl;
+  }
 }
 
 int main() {
