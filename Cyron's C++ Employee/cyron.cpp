@@ -25,22 +25,22 @@ void readEmployeeData(){
 
 
 
-//ofstream creates and writes to files
-//ifstream reads from files
-string EmployeeData_Output;
 
+
+string EmployeeData_Output;
+//ifstream reads from files
 //Read from edata.txt
-ifstream edataFile("edata.txt");
+ifstream readFile("edata.txt");
 
 /*Loop through with the getline() function to read the file line by line then
 using the EmlpoyeeData_Output to store the data from the file into that string,
 . Essentially outputting everything from the file into the new string variable.*/
 cout << "Edata.txt file information: \n" << endl;
-while( getline(edataFile, EmployeeData_Output) ) cout << EmployeeData_Output << endl;
+while( getline(readFile, EmployeeData_Output) ) cout << EmployeeData_Output << endl;
 
  
 //Closing edata.txt file
-edataFile.close();
+readFile.close();
 
 }
 
@@ -48,33 +48,57 @@ edataFile.close();
 void gross_netPay(int ID, string Name, double hoursWorked, double rateOfPay, double Deductions){
   
 
-  //Create file called epayinfo.txt
-  ifstream readFile("edata.txt");
-  ofstream employeePaymentInfo("epayinfo.txt",  std::ios_base::app);
+try{  
+       ifstream readFile("edata.txt");
+    if(readFile){
+        //ofstream writes to files
+       ofstream employeePaymentInfo("epayinfo.txt",  std::ios_base::app);
+    employeePaymentInfo << "\nGROSS AND NET PAY INFORMATION:";
+      while(readFile >> ID >> Name >> hoursWorked >> rateOfPay >>  Deductions){
+      double grossPay = hoursWorked * rateOfPay;
+      double netPay = grossPay - Deductions;
+    
+      employeePaymentInfo << "\nID: " << ID << ", Name: " << Name << ", Hours: " << hoursWorked << ", Rate of Pay: " << rateOfPay << ", Deductions: " << Deductions << ", gross pay: " << grossPay << ", net pay: " << netPay << endl;
+   
+       }  
+             cout << "\nAppended gross and net pay to file: " << "epayinfo.txt" << endl;
 
-  while(readFile >> ID >> Name >> hoursWorked >> rateOfPay >>  Deductions){
-  double grossPay = hoursWorked * rateOfPay;
-  double netPay = grossPay - Deductions;
- 
-  employeePaymentInfo << "\nID: " << ID << ", Name: " << Name << ", Hours: " << hoursWorked << ", Rate of Pay: " << rateOfPay << ", Deductions: " << Deductions << ", gross pay: " << grossPay << ", net pay: " << netPay << endl;
+     }
 
-  }
+     else{ throw 1;
+     } 
+    }catch(int errorcode){
+      cout << "An error occurred while trying to write to epayinfo.txt\nError code: " << errorcode << endl;
+    }
 }
 
 
 //Function that computes average hourly and deduction payments for each employee from a text file (epayinfo.txt). 
 void averagePayment(int ID, string Name, double hoursWorked, double rateOfPay, double Deductions) {
   
-   ifstream readFile ("edata.txt");
-  ofstream employeePaymentInfo("epayinfo.txt",  std::ios_base::app);
- while (readFile >> ID >> Name >> hoursWorked >> rateOfPay >>  Deductions){
+  try{
+       ifstream readFile ("edata.txt");
+
+    if(readFile){
+     ofstream employeePaymentInfo("epayinfo.txt",  std::ios_base::app);
+     employeePaymentInfo << "\nAverage Pay Information:";
+    while (readFile >> ID >> Name >> hoursWorked >> rateOfPay >>  Deductions){
   double averageHoursWork = hoursWorked / 5;
   double averageDeductions = Deductions / 5;
+    employeePaymentInfo << "\nID: " << ID << ", Name: " << Name << ", Average Hours Worked: " << averageHoursWork << ", Average Deductions: " << averageDeductions << endl;
+
+ }
+ cout << "Appended Average in file epayinfo.txt" << endl;
+ }
+  else throw 2;
+ 
+ }catch(int errorCode){ 
+  cout << "Failed to calculate average\nError Code: " << errorCode << endl;
+ }
 
 
-  employeePaymentInfo << "\nID: " << ID << ", Name: " << Name << ", Average Hours Worked: " << averageHoursWork << ", Average Deductions: " << averageDeductions << endl;
-  }
-}
+  }//End average Function
+
 
 int main() {
  
