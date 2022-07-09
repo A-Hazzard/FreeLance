@@ -79,7 +79,7 @@ void averagePayment(int ID, string Name, double hoursWorked, double rateOfPay, d
   try{
        ifstream readFile ("edata.txt");
 
-    if(readFile){
+   
      ofstream employeePaymentInfo("epayinfo.txt",  std::ios_base::app);
      employeePaymentInfo << "\nAverage Pay Information:";
     while (readFile >> ID >> Name >> hoursWorked >> rateOfPay >>  Deductions){
@@ -89,8 +89,6 @@ void averagePayment(int ID, string Name, double hoursWorked, double rateOfPay, d
 
  }
  cout << "Appended Average in file epayinfo.txt" << endl;
- }
-  else throw 2;
  
  }catch(int errorCode){ 
   cout << "Failed to calculate average\nError Code: " << errorCode << endl;
