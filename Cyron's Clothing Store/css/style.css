@@ -998,7 +998,7 @@ h1{
        width: calc(var(--product-card-width) + 10%);
        overflow: hidden;
        margin-top: 5%;
-      margin-left: calc(var(--product-card-margin-left) -2%);
+      margin-left: calc(var(--product-card-margin-left) - 2%);
     }
     
    
