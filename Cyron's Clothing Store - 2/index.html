@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/18479e6558.js" crossorigin="anonymous"></script>
+    <title>Cyron's Clothing Store</title>
+</head>
+<body>
+<header id="home-main">
+  <img id="logo" src="images/logo.png" alt="logo image" />
+  <hr>
+  <i class="fa-solid fa-bag-shopping"></i>`
+    <br>
+
+    <nav class="navbar">
+<button id="dropbtn" onclick="navigation()"><i class="fa-solid fa-bars"></i></button>
+       
+
+     <div id="myDropdown" class="dropdown-content">
+      <ul id="links-container">
+            <li class="nav-links"><a href="#welcome">Home</a></li>
+            <li class="nav-links"><a href="#aboutUs">About</a></li>
+            <li class="nav-links"><a href="#contact">Contact</a></li>
+            <li class="nav-links"><a href="html/faq.html">FAQ</a></li>
+            <li class="nav-links"><a href="html/policies.html">Store Policies</a></li>
+            <li class="nav-links"><a href="html/shop.html">Shop</a></li>
+        </ul>
+        </div>
+
+</nav>
+</header>
+<main id="home-container">
+  
+    <h1 id="welcome">WELCOME</h1>
+    <p id="CTA">Fashion You'll Love</p>
+
+<div id="slideshow">
+    
+
+        <div class="mySlides fade">
+          <img src="images/home-banner.webp" alt="home-banner">
+        </div>
+   
+    </div>    
+
+<!--PRODUCT IMAGES CONTAINER-->
+<div class="products-container">
+    <div class="product-card">
+        <div class="product-img">
+            <img src="images/hoodie.png" alt="hoodie">
+        </div>
+   
+    <div class="product-price">
+    <span>Black Hoodie<br><br>TT$250.00</span>
+    </div>
+
+        </div>
+
+        <div class="product-card">
+            <div class="product-img image2">
+                <img src="images/suit.webp" alt="suit">
+              
+            </div>
+       
+        <div class="product-price">
+        <span>Men's Suit<br><br>TT$1150.00</span>
+        </div>
+    
+    </div>
+
+    <div class="product-card">
+        <div class="product-img">
+            <img src="images/nike.png" alt="nike">
+        </div>
+   
+    <div class="product-price">
+    <span>Nike<br><br>TT$1025.00</span>
+    </div>
+
+</div>
+</div>
+
+<section id="aboutUs">
+    <div id="black-box">
+        <h2>ABOUT US</h2>
+        <p>Tired of walking through endless shops, looking for just the right item? Enter Cyron's Clothing Store, where you'll find a huge selection of goods at unbeatable prices, only a few clicks away.
+<br><br>
+Kyron's Clothing Store was founded by a group of like-minded fashion devotees, determined to deliver style to shoppers worldwide. Our store policies are fair and generous, our customer service is smart and useful. So what are you waiting for? Start shopping online today and find out more about what makes us so special.
+
+<br><br>
+Contact</p>
+
+    </div>
+
+    <div class="aboutUs-image-container">
+    <img id="aboutUS-image" src="images/clothes.webp" alt="clothes">
+    </div>
+
+</section>
+
+
+<section id="contact">
+    <div class="cont container">
+        <div class="contact-text">
+            <p>Drop your inquiry here and our experts will get back to you.</p>
+            <h6>Address</h6>
+            <p class="address">
+                Port-of-Spain, Trinidad and Tobago </p>
+            <h6>Email</h6>
+            <p class="mail">cyronhercules1234@gmail.com
+                .com</p>
+        </div>
+
+
+        <div class="contact-form">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+<script src="functionality.js"></script>
+</body>
+</html>
