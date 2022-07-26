@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/18479e6558.js" crossorigin="anonymous"></script>
+    <title>Cyron's Clothing Store</title>
+</head>
+<body>
+<header id="home-main">
+  <img id="logo" src="../images/logo.png" alt="logo image" />
+  <hr>
+  <i class="fa-solid fa-bag-shopping"></i>`
+    <br>
+
+    <nav class="navbar">
+<button id="dropbtn" onclick="navigation()"><i class="fa-solid fa-bars"></i></button>
+<a href="login.html"><i class="fa-solid fa-user"></i></a>
+
+
+     <div id="myDropdown" class="dropdown-content">
+      <ul id="links-container">
+            <li class="nav-links"><a href="../index.html">Home</a></li>
+            <li class="nav-links"><a href="about.html">About</a></li>
+            <li class="nav-links"><a href="contact.html">Contact</a></li>
+            <li class="nav-links"><a href="faq.html">FAQ</a></li>
+            <li class="nav-links"><a href="policies.html">Store Policies</a></li>
+            <li class="nav-links"><a href="shop.html">Men</a></li>
+            <li class="nav-links"><a href="womenShop.html">Women</a></li>        </ul>
+
+        </div>
+
+</nav>
+</header>
+
+<main class="store-main">
+    <h1>Sign in to your account</h1>
+    <span class="login-cta">Access your Account, Rewards, & Styled</span>
+
+    <form>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <br>
+        <input type="checkbox" name="checkbox" id="checkbox" required>
+        <span id="signInBox">Keep me signed in <span id="forgotPassword">Forgot Password</span></span>
+        <button id="submit" type="submit">Sign in</button>
+    </form>
+
+    <div class="register-container">
+        <p>Don't Have an Account Yet?</p>
+        <span>Earn a $5 Reward just for signing up!</span>
+        <a href="#">REGISTER</a>
+
+    </div>
+</main>
+
+<script src="../functionality.js"></script>
+</body>
+</html>
