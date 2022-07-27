@@ -139,7 +139,7 @@ main{
     margin-top: 5%;
 }
 
-h1, #CTA{
+h1, #quote{
     text-align: center;
     width: var(--full-width);
 }
@@ -150,7 +150,7 @@ h1{
    font-weight: normal;
 }
 
-#CTA{
+#quote{
     margin-bottom: 2%;
     font-family: 'Ubuntu', sans-serif;    
     color: black;
@@ -193,6 +193,7 @@ h1{
 }
 
 .product-card{
+  
     margin-left: var(--product-card-margin-left);
     padding-left: var(--product-card-padding-left);
     background-color: #c6c6c647;
@@ -363,12 +364,14 @@ h1{
 
 @media only screen and (min-width: 279px) {
    
+    
      #logo, #shop-logo{
           height: 80px;
           width: 80%;
 			margin-left: 10%;
 			object-fit: contain;
       }
+
  
       header .fa-bag-shopping{
        
@@ -422,7 +425,7 @@ h1{
 		font-weight: bold;
 		font-family: "Poppins";
 	}
-	#password, #email{
+	#login-form #password, #login-form #email{
 		padding: 2%;
 		border-top: none;
 		border-left: none;
@@ -430,6 +433,11 @@ h1{
 		border-color: rgba(128, 128, 128, 0.137);
 		margin: 5%;
 	}
+
+    .login-main .login-quote{
+        text-align: center;
+        display: block;
+    }
 
 	#checkbox{
 		margin-left: 5%;
@@ -534,15 +542,23 @@ h1{
 
 	}
     #about-us-main .about-us-image{
+  
         background-size:cover; 
 	    background-position:center; 
 	    background-repeat:no-repeat; 
         padding-top: 20%;
         padding-bottom: 10%;
+        margin-bottom: 120%;
         text-align: center;
         max-width: 100%;
 		min-height: 5rem;
         max-height: 8rem;
+    }
+
+    #about-us-main  .about-headings{
+        font-size: 2rem;
+		display: block;
+        margin-top: 60%;
     }
 
 	
@@ -550,6 +566,13 @@ h1{
 		font-size: 1.5rem;
 		font-family: "Poppins";
 	  }
+      .img5{
+        margin-top: -20%;
+      }
+
+      .img6{
+        margin-top: -50%;
+      }
 
 	    #about-us-main div:not(.about-us-image){
 			font-family: 'Montserrat', sans-serif;
@@ -558,6 +581,7 @@ h1{
 
 		#about-us-main .about-headings{
 			font-family: "Poppins", sans-serif;
+           
 		}
 
 	#about-us-main div:not(.about-us-image){
@@ -565,25 +589,71 @@ h1{
 		font-size: 1.2rem;
 	}
   
-
-    #about-us-main  .about-headings{
-        font-size: 2rem;
-		display: block;
+    .outreach .about-headings{
+        margin-top: -100% !important;
     }
+   
 
     #about-us-main .community{
         padding: 4%;
     }
     
-    
+    #contact{
+        padding: 2%;
+    }
+
+    #contact h1{
+        text-align: unset;
+        padding: 5%;
+        font-weight: bold;
+    }
 
 
     #links-container{
         margin-left: 5%;
     }
 
+    #contact-form input:not(:first-child), #contact-form textarea{
+        margin-top: 6%;
+    }
+
+    #contact-form input, #contact-form textarea{
+        padding: 4%;
+        border-radius: 5%;
+        border-color: grey;
+        font-family: "Poppins";
+    }
+
+    #contact-form input{
+        border-color: black;
+        border-width: 1px;
+    }
+
+    #contact-form button[type="submit"]{
+        width: 100%;
+        padding: 3%;
+        background-color: transparent;
+    }
+
     #shopping-header #links-container{
         margin-left: 5%;
+    }
+
+    .shop-banner img{
+        object-fit: cover;
+        width: 100%;
+        height: 35rem;
+        border: 1px solid;
+    }
+
+    .shop-banner p{
+        position: absolute;
+        z-index: 1;
+        color: white;
+        font-size: 2rem;
+        margin-top: -100%;
+        margin-left: 20%;
+        font-family: "Poppins";
     }
 
 
@@ -604,7 +674,7 @@ h1{
     }
    
 
-    h1, #CTA{
+    h1, #quote{
        margin: unset;
        text-align: center;
        display: block;
@@ -634,7 +704,7 @@ h1{
     }
     
 
-    #CTA{
+    #quote{
         margin-bottom: 2%;
         text-align: center;
         margin-left: -5%;
@@ -834,7 +904,7 @@ h1{
         margin-left: 1%;
     }
 
-    #FAQ-CTA{
+    #FAQ-quote{
         font-weight: unset;
         font-size: 15px;
     }
@@ -952,7 +1022,7 @@ h1{
 		padding: 5%;
 	}
 
-	.store-main .login-cta{
+	.store-main .login-quote{
 
 	}
 
@@ -1001,7 +1071,7 @@ h1{
     }
     
 
-    #CTA{
+    #quote{
         margin-bottom: 2%;
         text-align: center;
         margin-left: -5%;
@@ -1011,7 +1081,7 @@ h1{
     
    
 
-    h1, #CTA{
+    h1, #quote{
        margin: unset;
        text-align: center;
        display: block;
@@ -1034,7 +1104,7 @@ h1{
     }
     
 
-    #CTA{
+    #quote{
         margin-bottom: 2%;
         text-align: center;
         margin-left: -5%;
@@ -1161,7 +1231,7 @@ h1{
         margin-top: var(--container-margin-top);
     }
 
-    #FAQ-CTA{
+    #FAQ-quote{
         font-weight: unset;
         font-size: 15px;
     }
@@ -1223,7 +1293,7 @@ h1{
         #welcome{
             margin-left: 5%;
         }
-        #CTA{
+        #quote{
             margin-left: 5%;
         }
         
@@ -1235,10 +1305,27 @@ h1{
 
 @media only screen and (min-width: 374px) {
   
+    #shop-main-container h1{
+        padding: 5%;
+        letter-spacing: .01rem;
+    }
     #links-container{
         margin-left: 10%;
     } 
+    
+    .shop-banner img{
+        width: 105%;
+    }
 
+    .shop-men p{
+        margin-left: 35%;
+        margin-top: -90%;
+    }
+
+    .shop-women p{
+        margin-left: 25%;
+        margin-top: -90%;
+    }
     #shopping-header #links-container{
         margin-left: 15%;
    
@@ -1327,7 +1414,203 @@ h1{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 767px)  {
   
-         
+    #myDropdown{
+        display: unset;
+        margin-left: -85% !important;
+        width: 100%;
+    }
+
+    
+
+    .fa-bars{
+        display: none !important;
+    }
+
+    .nav-links a{
+        font-size: 1.5rem;
+    }
+
+    #links-container{
+        margin-left: 10% !important;
+    }
+
+  
+
+   
+  
+    .shop-women img{
+        width: 110%;
+    }
+    
+    .shop-men{
+        animation-name: sectionSlider;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .shop-women{
+        animation-name: sectionSlider2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sectionSlider{
+        from{
+                opacity: 0;
+                transform: translateX(-50%);
+        }
+       
+    }
+
+    @keyframes sectionSlider2{
+        from{
+                opacity: 0;
+                transform: translateX(80%);
+        }
+        to{
+            transform: translateX(5%);
+        }
+
+    }
+
+    
+
+    .shop-men p{
+        margin-left: 68%;
+        margin-top: -10%;
+    }
+
+    .shop-women p{
+        margin-left: 1%;
+        margin-top: -10%;
+     
+    }
+
+    .newWelcome{
+        animation-name: newWelcome;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes newWelcome{
+        from{
+            font-size: 0px;
+        }
+
+        to{
+            font-size: var(--h1-font-size);
+        }
+    }
+
+    .animatedBannerImg{
+        animation-name: animatedBannerImg;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes animatedBannerImg{
+        from{
+           
+            opacity: 0;
+            transform: translateX(-50%);
+            
+        }
+
+        to{
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+
+    .animatedCard1{
+        animation-name: animationCard1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .animatedCard2{
+        animation-name: animationCard2;
+  
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .animatedCard3{
+        animation-name: animationCard3;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes animationCard1{
+        from{
+            opacity: 0;
+            transform: translateY(50%);
+        }
+
+        to{
+            opacity: 100%;
+        }
+    }
+
+    @keyframes animationCard2{
+        from{
+            opacity: 0;
+            transform: translateY(50%);
+        }
+
+        to{
+            opacity: 100%;
+        }
+    }
+    @keyframes animationCard3{
+        from{
+            opacity: 0;
+            transform: translateY(50%);
+        }
+
+        to{
+            opacity: 100%;
+        }
+    }
+    #CTA-flex{
+        display: flex;
+    }
+
+    .shop-men p{
+        margin-left: 56%;
+        margin-top: -20%;
+    }
+
+    .shop-women p{
+        margin-left: 2%;
+        margin-top: -20%;
+    }
+
+    #shop-main-container h1{
+        font-size: 5rem;
+    }
+
+    .mini-nav{
+        font-size: 2rem;
+        margin-left: -40%;
+    }
+
+    #sort{
+        font-size: 2rem;
+    }
+
+    #form-control{
+        font-size: 1.5rem;
+    }
+
+    .fa-user{
+        font-size: 3rem !important;
+        margin-top: 2%;
+}
+
+
+
+    #store .img-container img{
+        height: 15rem;
+    }
     #shopping-header #shop-logo, #logo{
         height:80px;
         width: 80%;
@@ -1346,7 +1629,7 @@ h1{
          
       }
 
-      #welcome, #CTA{
+      #welcome, #quote{
         margin-left: unset;
       }
 
@@ -1376,6 +1659,11 @@ h1{
 		display: unset;
 	  }
 
+      .about-us-image{
+        margin:unset !important;
+      }
+
+      
 	  #about-us-main .about-us-image:not(.img1){	
 		background: unset;
         padding-top: unset;
@@ -1399,7 +1687,7 @@ h1{
 		max-width: 90%;
 	  }
 
-	  #about-us-main 
+	   
 
 	  .flex{
 		display: flex;
@@ -1413,6 +1701,10 @@ h1{
 		flex: 1;
 	  }
 
+      .community .about-headings{
+        margin-top: 0 !important;
+      }
+
 	  
 	
 	  .flex2 .about-us-image img{
@@ -1424,7 +1716,7 @@ h1{
 
 
 	  .flex2 .img4{
-		margin: 0 5% 0 5%;
+		margin: 0 5% 0 5% !important;
 	  }
 	
 	.flex3 .img6{
@@ -1439,6 +1731,13 @@ h1{
 		flex: 1.3;
 		overflow: hidden;
 	}
+
+    .outreach .about-headings{
+        margin-top: 10% !important;
+
+    }
+
+    
 
 	.flex3 .outreach img{
 		width: 100%;
@@ -1459,8 +1758,12 @@ h1{
 	}
 
 	.flex4 .img8{
-		margin: 0 5% 0 5%;
+		margin: 0 5% 0 5% !important;
 	}
+
+    .flex4{
+        margin-bottom: -100% !important;
+    }
   #links-container{
     margin-left: 25%;
   }
@@ -1715,7 +2018,56 @@ h1{
     
 @media only screen and (min-width: 1023px){
 
- 
+ .fa-bars{
+    display: none;
+ }
+
+   
+    #CTA-flex{
+        display: flex;
+    }
+
+    #home-banner-img{
+        margin-left: unset;
+    }
+
+    .shop-banner img{
+        width: 50vw;
+        height: 50rem;
+    }
+
+    .animatedBannerImg{
+        animation-name: animatedBannerImg;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sectionSlider2{
+        from{
+            transform: translateX(50%);
+        }
+    }
+
+    @keyframes animatedBannerImg{
+        from{
+            opacity: 0;
+            
+        }
+
+        to{
+            opacity: 100%;
+            transform: translateX(50%);
+        }
+    }
+    .shop-men p{
+        margin-left: 56%;
+        margin-top: -20%;
+    }
+
+    .shop-women p{
+        margin-left: 2%;
+        margin-top: -20%;
+    }
     
     #links-container{
         margin-left: 32%;
@@ -1868,6 +2220,10 @@ text-align: left;
     .answer{
         font-size: var(--answer-font-size);
     }
+
+    .product-card{
+        margin-left: 10% !important;
+    }
     
 }   
 
@@ -1902,7 +2258,7 @@ text-align: left;
         margin: unset;
         text-align: center;
     }
-    #CTA{
+    #quote{
         margin: unset;
         margin-bottom: 2%;
         text-align: center;
@@ -2022,7 +2378,7 @@ text-align: left;
         font-size: var(--h1-font-size);
     }
 
-    #FAQ-CTA{
+    #FAQ-quote{
         font-size: 18px;
     }
 
@@ -2055,9 +2411,12 @@ text-align: left;
 }
 
 @media only screen and (min-width: 1439px) {
+
     
-    
-    
+
+    .fa-user{
+        margin-left: -85%;
+    }
    #links-container{
     margin-left: 32%;
    }
@@ -2079,8 +2438,9 @@ text-align: left;
     
  
     .mySlides img {
-        margin-left: 15%;
+        margin-left: -50%;
         width: unset;
+        
     }
 
     
@@ -2216,7 +2576,7 @@ text-align: left;
         font-size: 100px;
      }
 
-     #FAQ-CTA{
+     #FAQ-quote{
         font-size: 30px;
      }
 
@@ -2233,10 +2593,10 @@ text-align: left;
      }
 
      #home-container #welcome{
-        font-size: 150px;
+        font-size: 0px !important;
      }
 
-     #home-container #CTA{
+     #home-container #quote{
         font-size: 40px;
      }
 
