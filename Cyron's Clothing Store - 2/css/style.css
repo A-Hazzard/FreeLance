@@ -374,7 +374,7 @@ h1{
 			object-fit: contain;
       }
 
- 
+
       header .fa-bag-shopping{
        
         display: none;
@@ -383,7 +383,7 @@ h1{
 
     nav{
         margin-top: 1%;
-   
+   width: 100%;
     }
       .dropdown-content {
         position: absolute;
@@ -488,17 +488,24 @@ h1{
         flex-direction: column;
     }
 
+    #about-us-main *{
+        overflow: unset;
+    }
+
 	#about-us-main img{
 		display: none;
 	}
 
     #about-us-main .img1{
         background: url("../images/aboutUs.png"); 
+        color: white;
+        margin-bottom: 10% !important;
 
     }
 
     #about-us-main .img2{
         background: url("../images/aboutUs2.png"); 
+        margin-bottom: -50% !important;
 
     }
 	#about-us-main .img3{
@@ -535,16 +542,12 @@ h1{
     }
 
 	#about-us-main .img10{
-        background: url("../images/aboutUs10.png")
-
+        background: url("../images/aboutUs10.png");
+        margin-bottom: -50% !important;
     }
 
-	#about-us-main .img1{
-		color: white;
-
-	}
+	
     #about-us-main .about-us-image{
-  
         background-size:cover; 
 	    background-position:center; 
 	    background-repeat:no-repeat; 
@@ -572,8 +575,10 @@ h1{
         margin-top: -20%;
       }
 
+    
       .img6{
         margin-top: -50%;
+
       }
 
 	    #about-us-main div:not(.about-us-image){
@@ -960,6 +965,11 @@ h1{
 		text-align: center;
 		display: block;
 	}
+
+
+    #shop-main-container *{
+        overflow: unset;
+    }
 
 	#sort-container{
 		margin-left: 3%;
@@ -1471,9 +1481,7 @@ h1{
                 opacity: 0;
                 transform: translateX(80%);
         }
-        to{
-            transform: translateX(5%);
-        }
+       
 
     }
 
@@ -1744,10 +1752,12 @@ input, textarea{
 		max-width: 100%;
 		min-height: 20rem;
 		max-height: 20rem;
+        
 	}
 
 	.flex4 .about-us-image{
 		width: 40%;
+        
 	}
 
 	.flex4 .img8{
@@ -1755,7 +1765,7 @@ input, textarea{
 	}
 
     .flex4{
-        margin-bottom: -100% !important;
+        margin-bottom: unset !important;
     }
   #links-container{
     margin-left: 25%;
@@ -2044,18 +2054,10 @@ input, textarea{
         }
     }
 
-    @keyframes animatedBannerImg{
-        from{
-            opacity: 0;
-            transform: translateX(-50%);
-
-        }
-
-        to{
-            opacity: 100%;
-            transform: translateX(5%);
-        }
+    #home-banner-img{
+        margin-left: 8%;
     }
+
     .shop-men p{
         margin-left: 56%;
         margin-top: -20%;
@@ -2362,7 +2364,17 @@ text-align: left;
 
 @media only screen and (min-width: 1365px) {
    
-   
+   .nav-links a{
+    font-size: 2rem;
+   }
+   @keyframes animatedBannerImg{
+     
+
+    to{
+     
+        transform: translateX(10%) ;
+    }
+}
     #faq-m .image-container img{
         margin-left: calc(var(--mySlide-img-margin-left) + 20%);
         width: 80%; 
@@ -2408,7 +2420,27 @@ text-align: left;
 }
 
 @media only screen and (min-width: 1439px) {
+ 
+ nav{
+    width: 100%;
+    margin-left: 95%;
+ }
+ 
+ @keyframes animatedBannerImg{
+     
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+     
+        transform: translateX(5%);
+    }
+}
 
+
+
+    
     .shop-women img{width: 120%;}
 
     #contact{
@@ -2531,6 +2563,21 @@ text-align: left;
     .answer{
         font-size: var(--answer-font-size);
     }
+
+    #home-banner-img{
+        margin-left: 15%;
+    }
+
+    .fa-user{
+        margin-left: -80%;
+        margin-top: -1%;
+    }
+   
+   
+
+    .product-card{
+        margin-left: 7% !important;
+    }
     
 } 
 
@@ -2641,7 +2688,14 @@ text-align: left;
         font-size: calc(var(--black-box-p-font-size) + 20px);
      }
     
+     @keyframes animatedBannerImg{
+     
 
+        to{
+         
+            transform: translateX(5%) ;
+        }
+    }
 
  } 
 
