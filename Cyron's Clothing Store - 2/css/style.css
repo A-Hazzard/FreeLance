@@ -89,6 +89,8 @@
    
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+
 }
 
 body{
@@ -1414,6 +1416,8 @@ h1{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 767px)  {
   
+   
+
     #myDropdown{
         display: unset;
         margin-left: -85% !important;
@@ -1438,7 +1442,7 @@ h1{
 
    
   
-    .shop-women img{
+    .shop-banner img{
         width: 110%;
     }
     
@@ -1503,24 +1507,11 @@ h1{
     }
 
     .animatedBannerImg{
-        animation-name: animatedBannerImg;
+        animation-name: animatedBannerImg ;
         animation-duration: 2s;
         animation-fill-mode: forwards;
     }
 
-    @keyframes animatedBannerImg{
-        from{
-           
-            opacity: 0;
-            transform: translateX(-50%);
-            
-        }
-
-        to{
-            transform: translateX(0);
-            opacity: 100%;
-        }
-    }
 
     .animatedCard1{
         animation-name: animationCard1;
@@ -1606,7 +1597,9 @@ h1{
         margin-top: 2%;
 }
 
-
+input, textarea{
+    width: 80%;
+}
 
     #store .img-container img{
         height: 15rem;
@@ -2018,6 +2011,9 @@ h1{
     
 @media only screen and (min-width: 1023px){
 
+    input, textarea{
+        width: 80%;
+    }
  .fa-bars{
     display: none;
  }
@@ -2051,12 +2047,13 @@ h1{
     @keyframes animatedBannerImg{
         from{
             opacity: 0;
-            
+            transform: translateX(-50%);
+
         }
 
         to{
             opacity: 100%;
-            transform: translateX(50%);
+            transform: translateX(5%);
         }
     }
     .shop-men p{
@@ -2412,7 +2409,19 @@ text-align: left;
 
 @media only screen and (min-width: 1439px) {
 
-    
+    .shop-women img{width: 120%;}
+
+    #contact{
+        margin-left: 25%;
+    }
+    input, textarea{
+        padding: 2% !important;
+        width: 50%;
+    }
+
+    button:last-of-type{
+        width: 50% !important;
+    }
 
     .fa-user{
         margin-left: -85%;

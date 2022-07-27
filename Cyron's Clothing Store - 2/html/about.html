@@ -42,10 +42,10 @@
     
 <div class="flex flex1">
     <div class="about-us-image img2">
-        <img src="../images/aboutUs2.png" alt="aboutUs2"> 
+        <img id="communityImg1" src="../images/aboutUs2.png" alt="aboutUs2"> 
     </div>
     <div class="community">
-        <img src="../images/communityImg.png" alt="">
+        <img class="comunityImg2" src="../images/communityImg.png" alt="">
         <span class="about-headings" >Community</span>
         Cryon believes in and understands the importance of using our voice, platform, and resources to inspire and bring about positive development in our local and global communities. Through meaningful partnerships and engagement, our goal is to inspire and positively impact the people around us, near and far.
     </div>
@@ -118,7 +118,19 @@
 
 
 <script src="../functionality.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<script>
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 1) {
+      $("#communityImg1").addClass("comImg1");
+    } 
+  });
+});
+
+</script>
 </body>
     
 </html>
